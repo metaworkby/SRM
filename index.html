@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Trader Nifty Banknifty | Official Telegram</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f2027,#2c5364,#1c1c1c);
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:420px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border-radius:25px;
+padding:30px 25px;
+text-align:center;
+color:#fff;
+box-shadow:0 0 40px rgba(0,0,0,0.5);
+border:1px solid rgba(255,255,255,0.2);
+}
+
+.logo-wrapper{
+display:flex;
+justify-content:center;
+margin-bottom:20px;
+}
+
+.logo-ring{
+position:relative;
+width:140px;
+height:140px;
+border-radius:50%;
+background:linear-gradient(135deg,#00f5ff,#ff00c8);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:4px;
+box-shadow:0 0 25px rgba(0,255,255,0.6),
+           0 0 35px rgba(255,0,200,0.6);
+}
+
+.logo-ring img{
+width:128px;
+height:128px;
+border-radius:50%;
+object-fit:cover;
+background:#111;
+}
+
+h1{
+font-size:22px;
+font-weight:800;
+background:linear-gradient(45deg,#00f5ff,#ff00c8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:8px;
+}
+
+.tagline{
+font-size:14px;
+opacity:0.9;
+margin-bottom:25px;
+}
+
+.cta-btn{
+display:inline-block;
+width:100%;
+padding:14px;
+border-radius:50px;
+font-weight:800;
+font-size:16px;
+text-decoration:none;
+color:#fff;
+background:linear-gradient(45deg,#00f5ff,#ff00c8);
+box-shadow:0 5px 20px rgba(255,0,200,0.5);
+transition:0.3s;
+margin-bottom:25px;
+}
+
+.cta-btn:hover{
+transform:scale(1.05);
+box-shadow:0 8px 30px rgba(0,255,255,0.6);
+}
+
+.benefits{
+text-align:left;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.benefits li{
+margin-bottom:8px;
+}
+
+.disclaimer{
+font-size:11px;
+opacity:0.7;
+margin-top:15px;
+line-height:1.5;
+}
+
+.footer{
+margin-top:20px;
+font-size:12px;
+opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo-wrapper">
+<div class="logo-ring">
+<img src="https://i.supaimg.com/f77790f5-a213-49f0-a481-8f7fdfc2fef1/b9e41b19-b4da-43ef-947d-bf5ae428e748.jpg" alt="Channel Logo">
+</div>
+</div>
+
+<h1>𝙎𝙩𝙤𝙘𝙠 𝙏𝙧𝙖𝙙𝙚𝙧 𝙉𝙞𝙛𝙩𝙮 𝘽𝙖𝙣𝙠𝙣𝙞𝙛𝙩𝙮</h1>
+
+<p class="tagline">Daily Accurate Intraday Signals | Nifty & BankNifty Expert Analysis 📈</p>
+
+<a href="https://t.me/+0OU_fb1mLoYzZjdl" 
+   class="cta-btn" 
+   target="_blank"
+   onclick="trackTelegramEvent()">
+🔘 JOIN TELEGRAM NOW 🔘
+</a>
+
+<ul class="benefits">
+<li>✅ High Accuracy Intraday Signals</li>
+<li>✅ Nifty & BankNifty Special Strategy</li>
+<li>✅ Proper Entry, Target & Stop Loss</li>
+<li>✅ Risk Management Guidance</li>
+<li>✅ Daily Market Updates</li>
+</ul>
+
+<p class="disclaimer">
+Disclaimer: This channel is only for educational purposes. 
+We are not SEBI registered advisors. Stock market investments are subject to market risks. 
+Please consult your financial advisor before investing.
+</p>
+
+<div class="footer">
+Managed By SRM Digital Ads
+</div>
+
+</div>
+
+<script>
+/* ✅ ONLY CUSTOM TELEGRAM SUBSCRIBE EVENT */
+function trackTelegramEvent(){
+
+// GA4 Custom Event
+if(typeof gtag !== "undefined"){
+gtag('event','telegram_subscribe_click',{
+event_category:'engagement',
+event_label:'telegram_join_button'
+});
+}
+
+// Meta Pixel Custom Event (if added manually)
+// fbq('trackCustom', 'TelegramSubscribe');
+
+console.log("Telegram Subscribe Clicked");
+}
+</script>
+
+</body>
+</html>
